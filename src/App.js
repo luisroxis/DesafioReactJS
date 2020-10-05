@@ -12,8 +12,8 @@ function App() {
   }, [])
   async function handleAddRepository() {
     const response = await api.post('repositories', {
-      title: 'Umbriel',
-      url: 'github.com/rocketseat/umbriel',
+      title: 'Desafio ReactJS',
+      url: 'https://github.com/luisroxis/DesafioReactJS',
       techs: ['NodeJS', 'ReactJS']
     })
     setRepositories([... repositories, response.data])
